@@ -1,0 +1,26 @@
+
+<h1> La Liste des candidats </h1>
+
+
+<table border="1">
+    <tr>
+        <td>Prenom</td>
+        <td>Nom</td>
+        <td>Poste souhaite</td>
+        <td>Date inscription</td>
+        <td>Details</td>
+      
+    </tr>
+    {% for c in candidats %}
+    <tr>
+        <td> {{ c.prenom }}</td>
+        <td> {{ c.nom }}</td>
+        <td> {{ c.poste }}</td>
+        <td> {{ c.date }}</td>
+        <td> <a href="/cv/profil/{{c._id}}"> Details</a></td>
+    </tr>
+    {% endfor %}
+
+
+</table>    
+

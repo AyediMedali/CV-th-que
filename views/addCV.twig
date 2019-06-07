@@ -1,0 +1,25 @@
+<h2>Formulaire ajout CV </h2> 
+
+<form method="POST" action="/cv/candidature" >
+    <label>Nom : </label>
+    <input type="text" name="nom"></br>
+    <label>Prenom : </label>
+    <input type="text" name="prenom"></br>
+    <label>Email : </label>
+    <input type="text" name="email"></br>
+    <label>Numero de telephone : </label>
+    <input type="text" name="tel"></br>
+    <label>Poste souhaité : </label>
+
+    <select name="poste">
+        <option value="PFE">PFE</option>
+        <option value="Stage">Stage</option>
+    </select>
+    <label>Message : </label>
+    <input type="text" name="message"></br>
+
+    <label> CV upload: </label>
+    <input type="file" name="cv">
+
+    <button type="submit">Ajouter</button>
+</form>

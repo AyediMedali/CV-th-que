@@ -1,0 +1,14 @@
+<h2> Pofile du Candidat {{profil.nom}} : </h2>
+
+<label> Nom : </label> {{profil.nom}} <br>
+<label> Prenom : </label> {{profil.prenom}}<br>
+<label> Email : </label> {{profil.email}}<br>
+<label> Poste souhaité : </label> {{profil.poste}}<br>
+<label> Numero de telephone : </label> {{profil.tel}}<br>
+<label> MEssage : </label> {{profil.message}}
+
+
+
+<form method="GET" action="/cv/download/{{profil.path}}" >
+    <button type="submit">Download CV</button>
+</form>
